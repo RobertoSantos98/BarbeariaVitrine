@@ -1,8 +1,10 @@
-import { LucideArrowRight } from "lucide-react";
+import { LucideArrowRight, LucideCalendar1, LucideCrown, LucideScissorsSquareDashedBottom } from "lucide-react";
 
 
 export function HomePage() {
     return(
+        <>
+        {/* Hero */}
         <section className="bg-linear-to-r from-amber-950 from-40% to-black">
             <div className="max-w-7xl mx-auto h-screen flex justify-between relative">
                 <div className="h-full justify-center flex flex-col gap-8 w-1/2 z-10">
@@ -45,5 +47,72 @@ export function HomePage() {
             </div>
 
         </section>
+
+        {/* 2 Section */}
+        <section className="bg-amber-50">
+            <div className="max-w-7xl mx-auto h-screen flex flex-col justify-around gap-4">
+                <div className="flex py-8">
+                    <span className="flex-1">
+                        <p className="text-xs text-amber-800 uppercase">Por que escolher a Vitrine?</p>
+                    </span>
+
+                    <div className="w-3/4 px-16">
+                        <h2 className="text-3xl font-bold">Uma Melhor Experiência revolucionária da consultoria até o corte final.</h2>
+                        <p className="text-slate-700">Nós provemos de um modernos serviços que te ajudam a parecer e se sentir melhor, com barbeiros experiêntes, produtos premium e um confortavel ambiente.</p>
+                    </div>
+                </div>
+
+                <div className="flex gap-4">
+
+                    <div className="rounded-2xl overflow-hidden flex-1 border border-slate-200 group hover:bg-white/40 hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+                        <div className="h-60 overflow-hidden">
+                            <img className=" group-hover:scale-105 transition-all duration-700" src="https://img.magnific.com/fotos-gratis/um-cliente-a-cortar-o-cabelo-num-barbeiro_1303-20861.jpg" alt="" />
+                        </div>
+
+                        <div className="flex flex-col p-4 gap-2">
+                            <div className="bg-amber-800/20 p-2 rounded-full self-start">
+                                <LucideScissorsSquareDashedBottom size={36} color="oklch(47.3% 0.137 46.201)" />
+                            </div>
+                            <p className="text-xl font-bold">Barbeiros Experiêntes</p>
+                            <p className="text-sm text-slate-700 ">Habilidosos e Experiêntes Barbeiros especializados em modernos e estilos clássicos.</p>
+                        </div>
+
+                    </div>
+
+                    <div className="rounded-2xl relative overflow-hidden flex-1 flex group hover:-translate-y-2 duration-300 transition-all hover:shadow-xl  ">
+                        <div className="overflow-hidden self-end absolute">
+                            <div className="bg-linear-to-b z-10 from-amber-950/90 to-amber-950/10 absolute inset-0" />
+                            <img className="group-hover:scale-105 transition-all duration-700" src="https://img.magnific.com/fotos-gratis/produtos-cosmeticos-de-beleza-masculina-com-display_23-2150435202.jpg" alt="" />
+                        </div>
+
+                        <div className="z-20 flex flex-col gap-2 p-8">
+                            <div className="bg-amber-800/70 p-2 rounded-full self-start">
+                                <LucideCrown size={36} color="#fff" />
+                            </div>
+                            <p className="text-xl text-white font-bold">Barbeiros Experiêntes</p>
+                            <p className="text-sm text-slate-200 ">Habilidosos e Experiêntes Barbeiros especializados em modernos e estilos clássicos.</p>
+                        </div>
+                    </div>
+
+                    <div className="rounded-2xl overflow-hidden flex-1 border border-slate-200 group hover:bg-white hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+                        <div className="h-60 overflow-hidden">
+                            <img className=" group-hover:scale-105 transition-all duration-700 object-cover" src="https://png.pngtree.com/thumb_back/fw800/background/20251225/pngtree-barber-giving-a-man-haircut-in-salon-image_20923156.webp" alt="" />
+                        </div>
+
+                        <div className="flex flex-col p-4 gap-2">
+                            <div className="bg-amber-800/20 p-2 rounded-full self-start">
+                                <LucideCalendar1 size={36} color="oklch(47.3% 0.137 46.201)" />
+                            </div>
+                            <p className="text-xl font-bold">Experiência Relaxante</p>
+                            <p className="text-sm text-slate-700 ">Um limpo, moderno e confortável espaço para aproveitar seu tempo ao máximo.</p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+         </>
     )
 }
